@@ -1,5 +1,6 @@
-# Termial
+# Terminal
 Provide pretty terminal screen, git log and convenient git command completion.
+![image](https://elirex.github.io/repo/terminal/terminal.png)
 
 ## Install
 Use "./install" command to install will copy your original ".bashrc" file to orgConfigure.
