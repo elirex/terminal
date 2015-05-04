@@ -17,3 +17,7 @@ l = "!source ~/.dotfiles/.gitlog && git_complete_log"
 bl = "!source ~/.dotfiles/.gitlog && git_branch_log"
 ```
 
+If above alias can't wrok, use the following:
+```
+l = "!bash -c 'source ~/.dotfiles/.gitlog && git_complete_log'"
+bl = "!bash -c 'source ~/.dotfiles/.gitlog && git_branch_log'"

@@ -1,5 +1,5 @@
 # Set alias
-alias ls='ls -al'
+alias ls='ls -alF --color=always'
 
 # git completion
 if [ -f ~/.dotfiles/.git-completion.bash ]; then
