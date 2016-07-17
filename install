@@ -8,7 +8,7 @@ cp ./.git-completion.bash ~/.dotfiles
 
 if [ -f ~/.bashrc ]; then
 	mkdir ~/orgConfigure
-	mv ~/.bashrc ~/orfConfigure 
+	mv ~/.bashrc ~/orgConfigure/org_bashrc
 	ln -s ~/.dotfiles/.bashrc ~/.bashrc
 else
 	ln -s ~/.dotfiles/.bashrc ~/.bashrc

@@ -7,7 +7,7 @@ Use "./install" command to install will copy your original ".bashrc" file to org
 ```shellscript
 $ git clone https://github.com/elirex/terminal.git
 $ cd termainl
-$ chmod u+x install
+$ chmod a+x install
 $ ./install
 ```
 
