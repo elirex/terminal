@@ -1,4 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+# Install Monaco font for Linux
+if [ "$(uname)" == "Linux" ]; then
+	sudo mkdir -p /usr/share/fonts/truetype/custom
+	sudo cp Monaco_Linux.ttf /usr/share/fonts/truetype/custom/
+	sudo fc-cache -f -v
+fi
 
 cat <<EOT >> ~/.bashrc
 if [ -f ~/.dotfiles/bash_custom ]; then
@@ -23,5 +30,6 @@ cat <<EOT >> ~/.gitconfig
 [difftool]
 	prompt = false
 EOT
+
 
 exit 0
