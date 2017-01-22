@@ -1,5 +1,10 @@
-# Set alias
-alias ll='ls -alF'
+OS_TYPE=$(uname)
+
+# The OS is Mac OS X
+if [ "$(uname)" == "Drawin" ]; then
+	alias ll='ls -alF'
+fi
+
 alias vi='vim'
 
 # git completion

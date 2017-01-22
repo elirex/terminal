@@ -1,17 +1,27 @@
 #!/bin/sh
 
-mkdir ~/.dotfiles
-cp ./.bashrc ~/.dotfiles/
-cp ./.gitlog ~/.dotfiles/
-cp ./.gitignore ~/.dotfiles/
-cp ./.git-completion.bash ~/.dotfiles
-
-if [ -f ~/.bashrc ]; then
-	mkdir ~/orgConfigure
-	mv ~/.bashrc ~/orgConfigure/org_bashrc
-	ln -s ~/.dotfiles/.bashrc ~/.bashrc
-else
-	ln -s ~/.dotfiles/.bashrc ~/.bashrc
+cat <<EOT >> ~/.bashrc
+if [ -f ~/.dotfiles/bash_custom ]; then
+	. ~/.dotfiles/bash_custom
 fi
+EOT
+
+cat <<EOT >> ~/.gitconfig
+[alias]
+	sl = "!bash -c 'source ~/.dotfiles/gitlog && git_branch_log'"
+	l = "!bash -c 'source ~/.dotfiles/gitlog && git_complete_log'"
+[gui]
+	encoding = utf-8
+[i18n]
+	commitencoding = utf-8
+[core]
+	editor = vim
+[color]
+	diff = auto
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+EOT
 
 exit 0
