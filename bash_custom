@@ -2,8 +2,7 @@ OS_TYPE=$(uname)
 
 # The OS is Mac OS X
 if [ "$OS_TYPE" == "Drawin" ]; then
-	alias ll='ls -alF'
-
+    alias ll='ls -alF'
     export CLICOLOR='true'
     export TERM="xterm-256color"
     export LSCOLORS=Exfxcxdxxxegedabagacad
