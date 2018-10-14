@@ -1,6 +1,8 @@
 # Set alias
 alias ll='ls -alF'
 alias vi='vim'
+alias py3='python3'
+alias py2='python2'
 
 # git completion
 if [ -f ~/.dotfiles/.git-completion.bash ]; then
@@ -34,3 +36,4 @@ show_git_branch() {
 # }
 
 export PS1="\[\033[1;33m\]\u\[\033[1;37m\]@\[\033[1;32m\]\h\[\033[1;31m\][\w]\[\033[1;34m\]\$(show_git_branch)\[\033[1;36m\] \$\[\033[0m\] "
+
