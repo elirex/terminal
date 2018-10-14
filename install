@@ -8,15 +8,15 @@ if [ "$(uname)" == "Linux" ]; then
 fi
 
 cat <<EOT >> ~/.bashrc
-if [ -f ~/.dotfiles/bash_custom ]; then
-	. ~/.dotfiles/bash_custom
+if [ -f ~/.terminal/bash_custom ]; then
+	. ~/.terminal/bash_custom
 fi
 EOT
 
 cat <<EOT >> ~/.gitconfig
 [alias]
-	sl = "!bash -c 'source ~/.dotfiles/gitlog && git_branch_log'"
-	l = "!bash -c 'source ~/.dotfiles/gitlog && git_complete_log'"
+	sl = "!bash -c 'source ~/.terminal/gitlog && git_branch_log'"
+	l = "!bash -c 'source ~/.terminal/gitlog && git_complete_log'"
 [gui]
 	encoding = utf-8
 [i18n]

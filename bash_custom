@@ -1,7 +1,7 @@
 OS_TYPE=$(uname)
 
 # The OS is Mac OS X
-if [ "$OS_TYPE" == "Drawin" ]; then
+if [ "$OS_TYPE" == "Darwin" ]; then
     alias ll='ls -alF'
     export CLICOLOR='true'
     export TERM="xterm-256color"
@@ -13,8 +13,8 @@ alias py3='python3'
 alias py2='python2'
 
 # git completion
-if [ -f ~/.dotfiles/git_completion.bash ]; then
-	source ~/.dotfiles/git_completion.bash
+if [ -f ~/.terminal/git_completion.bash ]; then
+	source ~/.terminal/git_completion.bash
 fi
 
 parse_git_branch() {
