@@ -1,12 +1,20 @@
-# Set alias
-alias ll='ls -alF'
+OS_TYPE=$(uname)
+
+# The OS is Mac OS X
+if [ "$OS_TYPE" == "Drawin" ]; then
+    alias ll='ls -alF'
+    export CLICOLOR='true'
+    export TERM="xterm-256color"
+    export LSCOLORS=Exfxcxdxxxegedabagacad
+fi
+
 alias vi='vim'
 alias py3='python3'
 alias py2='python2'
 
 # git completion
-if [ -f ~/.dotfiles/.git-completion.bash ]; then
-	source ~/.dotfiles/.git-completion.bash
+if [ -f ~/.dotfiles/git_completion.bash ]; then
+	source ~/.dotfiles/git_completion.bash
 fi
 
 parse_git_branch() {
