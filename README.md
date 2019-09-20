@@ -4,8 +4,8 @@ Provide pretty terminal screen, git log and convenient git command completion.
 
 ## Install
 ```shellscript
-$ git clone https://github.com/elirex/terminal.git ~/.dotfiles
-$ cd ~/.dotfiles
+$ git clone https://github.com/elirex/terminal.git ~/.terminal
+$ cd ~/.terminal
 $ chmod a+x install
 $ ./install
 ```

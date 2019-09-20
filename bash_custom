@@ -13,8 +13,8 @@ alias py3='python3'
 alias py2='python2'
 
 # git completion
-if [ -f ~/.dotfiles/git_completion.bash ]; then
-	source ~/.dotfiles/git_completion.bash
+if [ -f ~/.terminal/git_completion.bash ]; then
+	source ~/.terminal/git_completion.bash
 fi
 
 parse_git_branch() {
