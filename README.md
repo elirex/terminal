@@ -9,3 +9,11 @@ $ cd ~/.terminal
 $ chmod a+x install
 $ ./install
 ```
+
+### Import 
+Add the below setting into `.bashrc` or `.zshrc` 
+```shellscript
+if [[ -f ~/.terminal/shell_config.sh ]]; then
+    . ~/.terminal/shell_config.sh
+fi
+```

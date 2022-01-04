@@ -7,9 +7,9 @@ if [ "$(uname)" == "Linux" ]; then
 	sudo fc-cache -f -v
 fi
 
-cat <<EOT >> ~/.bashrc
-if [ -f ~/.terminal/bash_custom ]; then
-	. ~/.terminal/bash_custom
+cat <<EOT >> ~/.profile
+if [ -f ~/.terminal/shell_config.sh ]; then
+	. ~/.terminal/shell_config.sh
 fi
 EOT
 
