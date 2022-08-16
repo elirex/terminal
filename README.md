@@ -17,3 +17,9 @@ if [[ -f ~/.terminal/shell_config.sh ]]; then
     . ~/.terminal/shell_config.sh
 fi
 ```
+
+## Setup neovim
+
+### Install [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts) for powerline
+
+
