@@ -1,3 +1,5 @@
 .DS_Store
 .gitconfig
 *.swp
+
+nvim/plugin/packer_compiled.lua
