@@ -10,6 +10,7 @@ mason_lspconfig.setup {
     ensure_installed = {
         'sumenko_lua',
         'pylsp',
+        'clangd',
     }
 }
 
@@ -109,6 +110,9 @@ nvim_lsp.pylsp.setup {
         }
     }
 }
+
+nvim_lsp.jdtls.setup {}
+
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {

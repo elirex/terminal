@@ -49,6 +49,9 @@ vim.opt.showtabline = 2
 -- setup backspace
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 
-vim.opt.listchars = {eol = '↲', tab = '▸ ', space = '·'}
+-- setup backupskip
+vim.opt.backupskip = { '/tmp/*', '/private/tmp/*' }
+
+vim.opt.listchars = { eol = '↲', tab = '▸ ', space = '·' }
 vim.keymap.set('n', '<F3>', ':set invlist <CR>')
 vim.keymap.set('i', '<F3>', '<ESC> :set invlist <CR> a')
