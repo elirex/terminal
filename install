@@ -22,7 +22,7 @@ cat <<EOT >> ~/.gitconfig
 [i18n]
 	commitencoding = utf-8
 [core]
-	editor = vim
+	editor = nvim
 [color]
 	diff = auto
 [diff]

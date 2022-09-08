@@ -13,7 +13,7 @@ if [[ "$OS_TYPE" = "Darwin" ]]; then
     export LSCOLORS=Exfxcxdxxxegedabagacad
 fi
 
-if [[ "$SHELL_TYPE" = "-zsh"  ]]; then
+if [[ "$SHELL_TYPE" = "-zsh"  || "$SHELL_TYPE" = "/bin/zsh" ]]; then
     source ~/.terminal/zsh/zsh_config.zsh
 else
     source ~/.terminal/bash/bash_config.bash
