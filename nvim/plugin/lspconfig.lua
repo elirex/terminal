@@ -11,6 +11,7 @@ mason_lspconfig.setup {
         'sumenko_lua',
         'pylsp',
         'clangd',
+        'kotlin_language_server',
     }
 }
 
@@ -111,7 +112,12 @@ nvim_lsp.pylsp.setup {
     }
 }
 
-nvim_lsp.jdtls.setup {}
+
+nvim_lsp.kotlin_language_server.setup {
+    on_attach = on_attach,
+    settings = {
+    }
+}
 
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
