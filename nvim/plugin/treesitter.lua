@@ -9,5 +9,15 @@ treesitter.setup {
     indent = {
         enable = true,
         disable = {},
-    }
+    },
+    ensure_installed = {
+        "lua",
+        "python",
+        "c",
+        "cpp",
+        "java"
+    },
+    autotag = {
+        enable = true,
+    },
 }
