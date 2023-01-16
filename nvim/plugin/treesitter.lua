@@ -11,11 +11,16 @@ treesitter.setup {
         disable = {},
     },
     ensure_installed = {
-        "lua",
-        "python",
         "c",
         "cpp",
-        "java"
+        "java",
+        "javascript",
+        "json",
+        "kotlin",
+        "lua",
+        "python",
+        "typescript",
+        "yaml"
     },
     autotag = {
         enable = true,
