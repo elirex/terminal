@@ -20,6 +20,8 @@ fi
 
 ## Setup neovim
 
-### Install [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts) for powerline
+### Link nvim floder to ~/config/nvim
 
+### Install[wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) for plugins managerment
+### Install [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts) for powerline (suggestion font: Hack Nerd Font Mono)
 
