@@ -8,7 +8,7 @@ if (not mason_lspconfig_status) then return end
 mason.setup({})
 mason_lspconfig.setup {
     ensure_installed = {
-        'sumneko_lua',
+        'lua_ls',
         'pylsp',
         'clangd',
     }
@@ -80,7 +80,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities(
 )
 
 -- set up for lua
-nvim_lsp.sumneko_lua.setup {
+nvim_lsp.lua_ls.setup {
     on_attach = on_attach,
     settings = {
         Lua = {
@@ -97,6 +97,7 @@ nvim_lsp.sumneko_lua.setup {
     },
 }
 
+
 nvim_lsp.pylsp.setup {
     on_attach = on_attach,
     settings = {
@@ -111,13 +112,18 @@ nvim_lsp.pylsp.setup {
     }
 }
 
+nvim_lsp.clangd.setup {
+    on_attach = on_attach
+}
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
-    underline = true,
-    update_in_insert = false,
-    virtual_text = { spacing = 4, prefix = "●" },
-    severity_sort = true,
-})
+        underline = true,
+        update_in_insert = false,
+        virtual_text = { spacing = 4, prefix = "●" },
+        severity_sort = true,
+    }
+)
 
 
 -- Diagnostic symbols in the sign column (gutter)

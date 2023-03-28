@@ -11,6 +11,7 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
     use 'wbthomason/packer.nvim'
+    use 'morhetz/gruvbox'
     use 'nvim-lualine/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'L3MON4D3/LuaSnip'
@@ -23,6 +24,7 @@ packer.startup(function(use)
     use 'neovim/nvim-lspconfig'
     use {
         'nvim-treesitter/nvim-treesitter',
+        tag = 'v0.8.1',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
 end)
