@@ -5,7 +5,6 @@ if (not status) then
     return
 end
 
-
 vim.cmd [[packadd packer.nvim]]
 
 
@@ -22,9 +21,13 @@ packer.startup(function(use)
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        tag = 'v0.8.1',
-        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
-    }
+    -- use {
+    --     'nvim-treesitter/nvim-treesitter',
+    --      tag = 'v0.9.0',
+    --      run = function() 
+    --         require('nvim-treesitter.install').update({ 
+    --             with_sync = true 
+    --         }) 
+    --      end,
+    -- }
 end)
