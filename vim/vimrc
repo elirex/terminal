@@ -1,0 +1,59 @@
+" enable syntax
+syntax on
+
+" set colorscheme
+" colorscheme monokai
+colorscheme gruvbox
+set bg=dark
+
+" disable vi-cimpatibility
+set nocompatible
+
+" enable mouse support
+set mouse=a
+
+" enable number
+set number
+
+" highlight current cursor line
+set cursorline
+
+" show the current cursor states on status bar
+set ruler
+
+" highlight search
+set hlsearch
+
+" enable smartcase search sensitivity
+set ignorecase
+set smartcase
+
+" Indentation using spaces
+" tabstop:      width of tab character
+" softtabstop:  fine tunes the amount of whitespace to be added
+" shiftwidth:   determines the amount of whitespace to add in normal mode
+" expandtab:    when on use space instead of tab
+" textwidth:    text wrap width
+" autoindent:   autoindent in new line
+set tabstop     =4
+set softtabstop =4
+set shiftwidth  =4
+set textwidth   =79
+set expandtab
+set autoindent
+
+" show the matching part of pairs [], {} and ()
+set showmatch
+
+" the max length of column
+set colorcolumn=80 
+
+" always show the statusline
+set laststatus=2
+
+" always show the tab
+set showtabline=2
+
+" display space as · and EOS as $ 
+set listchars=space:·,tab:▸\ ,eol:↲
+

@@ -22,7 +22,7 @@ cat <<EOT >> ~/.gitconfig
 [i18n]
 	commitencoding = utf-8
 [core]
-	editor = nvim
+	editor = vim
 [color]
 	diff = auto
 [diff]
@@ -30,6 +30,10 @@ cat <<EOT >> ~/.gitconfig
 [difftool]
 	prompt = false
 EOT
+
+# setup vim setting
+ln -s ~/.terminal/vim ~/.vim
+ln -s ~/.terminal/vim/vimrc ~/.vimrc
 
 
 exit 0
