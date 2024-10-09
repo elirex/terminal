@@ -1,11 +1,13 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 OS_TYPE=`uname`
 SHELL_TYPE=`ps -o comm= $$`
 
-# The OS is Mac OS X
 alias vi='vim'
 alias py3='python3'
 alias py2='python2'
 
+# The OS is Mac OS X
 if [[ "$OS_TYPE" = "Darwin" ]]; then
     alias ll='ls -alF'
     export CLICOLOR='true'
