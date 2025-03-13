@@ -13,7 +13,7 @@ set bg=dark
 set nocompatible
 
 " enable mouse support
-set mouse=a
+set mouse=v
 
 " enable number
 set number
