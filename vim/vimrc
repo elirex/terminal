@@ -36,13 +36,17 @@ set smartcase
 " softtabstop:  fine tunes the amount of whitespace to be added
 " shiftwidth:   determines the amount of whitespace to add in normal mode
 " expandtab:    when on use space instead of tab
-" textwidth:    text wrap width
 " autoindent:   autoindent in new line
 set tabstop     =4
 set softtabstop =4
 set shiftwidth  =4
-set textwidth   =79
 set expandtab
+
+" textwidth: new line when the text over the width
+" set textwidth   =79
+
+" wrap the text when is over the window size
+set wrap
 
 set autoindent
 set smartindent
