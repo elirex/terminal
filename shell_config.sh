@@ -8,7 +8,7 @@ fi
 alias vi='vim'
 alias py3='python3'
 alias py2='python2'
-alias ll='ls -alF'
+alias ll='ls -alF --color=auto'
 
 # The OS is Mac OS X
 if [[ "$OS_TYPE" = "Darwin" ]]; then
